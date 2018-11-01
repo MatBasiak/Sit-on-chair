@@ -1,5 +1,5 @@
 {
-  "name": "wro-fer-w-06",
+  "name": "sit.on.chair",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,20 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frechpriest/WRO-fer-w-06.git"
+    "url": "git+https://github.com/matbasiak/sit-on-chair-"
   },
   "author": "Mateusz Basiak ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frechpriest/WRO-fer-w-06/issues"
+    "url": "https://github.com/matbasiak/sit-on-chair-"
   },
-  "homepage": "https://github.com/frechpriest/WRO-fer-w-06#readme",
+  "homepage": "https://github.com/matbasiak/sit-on-chair-#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "firebase": "^5.5.4",
