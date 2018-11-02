@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Header from './components/header/header'
+import style from './index.scss'
 
 
 class App extends React.Component{
@@ -8,7 +9,7 @@ class App extends React.Component{
 
     render() {
         return (
-            <div>
+            <div className={style.main_container}>
                 <Header/>
             </div>
         )
