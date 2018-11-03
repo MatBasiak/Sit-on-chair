@@ -9,8 +9,8 @@ export default class Header extends PureComponent {
       return (
         
       <div className={style.header_container}>
-              <Logo class={style.logo}/>
-            <Menu/>
+            <Logo class={style.logo}/>
+              <Menu class={style.menu}/>
             </div>
               
     )

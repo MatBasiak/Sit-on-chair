@@ -1,14 +1,44 @@
 .header_container{
     width: 100vw;
-    background-color: black;
+    background-color: gray;
     display:grid;
+    grid-template-columns:200px 1fr 300px ;
+    grid-template-rows: 40px;
+    align-items: center;
+    
 
-    a{
+
+    .menu{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        font-family: 'Raleway-Black';
+        text-transform: uppercase;
+        text-decoration: none;
+    
+        a{
+       
         color:white;
-    }
-    .logo{
-        color:white;
+        font-family: 'Raleway-Black';
+        text-transform: uppercase;
+        text-decoration: none;
         
+
+         }
+        }
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+       
+        color:white;
+        font-family: 'Raleway-Black';
+        text-transform: uppercase;
+        margin-left: 3rem;
+        font-size: 0.9rem;
+
+        span{
+            color:lightseagreen;
+        }
+
         
     }
     
