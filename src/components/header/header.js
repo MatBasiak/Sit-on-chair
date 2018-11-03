@@ -10,7 +10,7 @@ export default class Header extends PureComponent {
         
       <div className={style.header_container}>
             <Logo class={style.logo}/>
-              <Menu class={style.menu}/>
+            <Menu class={style.menu}/>
             </div>
               
     )

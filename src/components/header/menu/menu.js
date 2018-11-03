@@ -6,7 +6,7 @@ export default class Menu extends Component {
     }
   render() {
     return (
-      <div className={this.props.menu}>
+      <div className={this.props.class}>
             {/* <DropDownMenu />  // prepare when header will be ready*/} 
                 <a href ="#"> O firmie</a>
                 <a href='#'  > Galeria</a>
