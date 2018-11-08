@@ -5,6 +5,9 @@
     background-image: linear-gradient(white, lightgray);
     display: grid;
     grid-template-columns: 47% 53%;
+    grid-gap: 1rem;
+
+
 
     &_left {
         display: grid;
@@ -96,4 +99,42 @@
             transform: rotate(-45deg)
         }
     }
+}
+
+@media screen and (max-width: 600px){
+.container{
+    width: 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+    justify-items: center;
+    
+
+
+
+    &_left{
+        grid-column: 1/2;
+        justify-items: center;
+        width:300px;
+        height: 300px;
+      left: -50px;
+        top:-60px;
+    }
+    &_right {
+        grid-column: 1/2;
+        grid-row:2/3;
+       grid-template-columns: min-content;
+    
+    
+
+
+    }
+
+
+   .leftArrow,
+   .rightArrow{
+       display: none;
+   }
+
+
+}
 }
