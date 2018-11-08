@@ -1,45 +1,44 @@
-.container{
+.container {
     border: 1px solid black;
-    width:100%;
+    width: 100%;
     height: 31rem;
     background-image: linear-gradient(white, lightgray);
     display: grid;
-    grid-template-columns: 47% 53%; 
-    
-    &_left{
-        border:3px solid green;
-        display:grid;
+    grid-template-columns: 47% 53%;
+
+    &_left {
+        display: grid;
         grid-template-columns: 100px auto;
         align-items: center;
         justify-items: end;
         position: relative;
-    
 
-    .image{
-      position:absolute;
-      top:64px;
-      left:25px;
-        background-image: url('../../../../docs/images/black_chair.png');
-        width:107%;
-        height: 107%;
-        
-      
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 1px solid red;
-        
+
+        .image {
+            position: absolute;
+            top: 64px;
+            left: 25px;
+            background-image: url('../../../../docs/images/black_chair.png');
+            width: 107%;
+            height: 107%;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .leftArrow {
+            margin-top: 25px;
+            justify-self: end;
+            border: solid lightseagreen;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 19px;
+            transform: rotate(135deg)
+        }
     }
-    .leftArrow{
-    margin-top:25px;
-    justify-self: end;    
-    border: solid lightseagreen;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 19px;
-    transform: rotate(135deg)
-    }
-}
-    &_right{
+
+    &_right {
         display: grid;
         grid-template-rows: 10rem 10rem 10rem;
         grid-template-columns: 2fr 1fr;
@@ -47,52 +46,54 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        border: 2px solid red;
+       
 
 
-    h1{
-        font-size: 2.4rem;
-        text-transform: uppercase;
-        align-self: end;
+        h1 {
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            align-self: end;
 
-        span{
-            color:lightseagreen;
+            span {
+                color: lightseagreen;
+            }
         }
-    }
-    p{
-        grid-column: 1/2;
-        text-align:justify;
-        text-indent: 1rem;
-        line-height: 1.5rem;
-        font-size: 0.9rem;
 
-    }
-    .button{
-        grid-column: 1/2;
-        align-self:start;
-        width:16.3rem;
-        height: 3.1rem;
-        background-color: lightseagreen;
-        border-radius: 5px;
-        color:white;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 13px;
-        font-size: 1.5rem;
-        
-    }
-    .rightArrow{
-        grid-column: 2/3;
-        grid-row:2/3;
-        
-           
-            justify-self: center;    
+        p {
+            grid-column: 1/2;
+            text-align: justify;
+            text-indent: 1rem;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+
+        }
+
+        .button {
+            grid-column: 1/2;
+            align-self: start;
+            width: 16.3rem;
+            height: 3.1rem;
+            background-color: lightseagreen;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 13px;
+            font-size: 1.5rem;
+
+        }
+
+        .rightArrow {
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+
+            justify-self: center;
             border: solid lightseagreen;
             border-width: 0 3px 3px 0;
-           
+
             padding: 19px;
             transform: rotate(-45deg)
-            
+        }
     }
-}
 }
