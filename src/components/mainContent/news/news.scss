@@ -9,11 +9,11 @@
     &_left{
         border:3px solid green;
         display:grid;
-        grid-template-columns: 50px auto;
+        grid-template-columns: 100px auto;
         align-items: center;
         justify-items: end;
         position: relative;
-    }
+    
 
     .image{
       position:absolute;
@@ -27,13 +27,18 @@
         background-size: contain;
         background-repeat: no-repeat;
         border: 1px solid red;
-       
-      
-      
-        
-
         
     }
+    .leftArrow{
+    margin-top:25px;
+    justify-self: end;    
+    border: solid lightseagreen;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 19px;
+    transform: rotate(135deg)
+    }
+}
     &_right{
         display: grid;
         grid-template-rows: 10rem 10rem 10rem;
@@ -61,7 +66,16 @@
     }
     .rightArrow{
         grid-column: 2/3;
-        grid-row:2/3
+        grid-row:2/3;
+        
+           
+            justify-self: center;    
+            border: solid lightseagreen;
+            border-width: 0 3px 3px 0;
+           
+            padding: 19px;
+            transform: rotate(-45deg)
+            
     }
 }
 }
