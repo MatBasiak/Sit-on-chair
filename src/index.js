@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Header from './components/header/header'
 import style from './index.scss'
 import News from './components/mainContent/news/news';
+import Gallery from './components/mainContent/gallery/gallery';
 
 
 class App extends React.Component{
@@ -12,7 +13,8 @@ class App extends React.Component{
         return (
             <div className={style.main_container}>
                 <Header />
-                <News/>
+                <News />
+                <Gallery/>
             </div>
         )
     }
