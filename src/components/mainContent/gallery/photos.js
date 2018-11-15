@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import transformer from './transformer';
 
 class Photos extends Component{
     constructor(props){
@@ -11,7 +10,7 @@ class Photos extends Component{
         console.log(dataArray);
    
        return ( dataArray.map((element,i )=> (
-         <div key={i}>{element.text}<img src={`./${element.src}`}/></div>)
+         <div key={i}><div><h2>{element.text}</h2></div><img src={`./${element.src}`}/></div>)
           )   
        )    
           

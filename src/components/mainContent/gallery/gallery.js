@@ -22,7 +22,7 @@ export default class Gallery extends Component {
     return (
       <div className={styles.galery_container}>
             <Photos style={styles.photos} data={this.state}/>
-            <Text/>
+            <Text style={styles.text}/>
       </div>
     )
   }
