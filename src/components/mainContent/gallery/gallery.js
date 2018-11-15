@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Photos from './photos'
+import Text from './text'
 import styles from './gallery.scss'
 
 export default class Gallery extends Component {
@@ -19,7 +21,7 @@ export default class Gallery extends Component {
   render() {
     return (
       <div className={styles.galery_container}>
-            <Photos style={style.photos} data={this.state}/>
+            <Photos style={styles.photos} data={this.state}/>
             <Text/>
       </div>
     )
