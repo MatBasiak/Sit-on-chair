@@ -4,6 +4,7 @@ import Header from './components/header/header'
 import style from './index.scss'
 import News from './components/mainContent/news/news';
 import Gallery from './components/mainContent/gallery/gallery';
+import PriceList from './components/mainContent/priceList/pricelist';
 
 
 class App extends React.Component{
@@ -15,6 +16,8 @@ class App extends React.Component{
                 <Header />
                 <News />
                 <Gallery/>
+                <PriceList/>
+                
             </div>
         )
     }

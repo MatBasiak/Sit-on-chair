@@ -1,0 +1,19 @@
+.container{
+    background-color: aqua;
+
+    .cardHolder{
+        background-color: red;
+        display: grid;
+        grid-template-rows: 85%;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.card{
+    width: 150px;
+    height: 250px;
+    color: black;
+    border:1px solid black;
+}
