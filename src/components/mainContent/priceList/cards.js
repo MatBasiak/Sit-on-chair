@@ -16,7 +16,8 @@ export default class Cards extends Component {
     cardCreate = (item,style,i)=>{
         return(
             <div key={i} className={style.card}>
-                {item.name}
+                <h1>{item.name}</h1>
+                <div className={style.priceBox}>{`${item.price} PLN/MSC`}</div>
             </div>
         )}
 

@@ -1,19 +1,58 @@
 .container{
     background-color: aqua;
+    height: 77vh;
 
     .cardHolder{
         background-color: red;
+        height: 99%;
+        width: 100%;
         display: grid;
-        grid-template-rows: 85%;
-        grid-template-columns: repeat(3,1fr);
-        justify-content: center;
-        align-content: center;
+        grid-template-rows: 80%;
+        grid-template-columns: 34% 32% 34%;
+        align-content:end;
+        justify-content: end;
+        justify-items: center;
+       
+     
+       
+        
+        
     }
 }
 
 .card{
-    width: 150px;
-    height: 250px;
+    width: 25vw;
+    height: 90%;
+    
+    
     color: black;
     border:1px solid black;
+    position: relative;
+    text-align: center;
+
+    &::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: green;
+    }
+
+    h1{
+        margin-top: 10%;
+        text-transform: uppercase;
+        font-size: 22px;
+        color:white;
+    }
+    
+
+    .priceBox{
+        position: absolute;
+        left: 27%;
+        top:17%;
+        width: 42%;
+        height: 25%;
+        background-color: green;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
