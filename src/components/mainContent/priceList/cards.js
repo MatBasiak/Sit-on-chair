@@ -17,7 +17,7 @@ export default class Cards extends Component {
         return(
             <div key={i} className={style.card}>
                 <h1>{item.name}</h1>
-                <div className={style.priceBox}>{`${item.price} PLN/MSC`}</div>
+                <div className={style.priceBox}><h3>{`${item.price}`}</h3><span>pln/msc</span></div>
             </div>
         )}
 
