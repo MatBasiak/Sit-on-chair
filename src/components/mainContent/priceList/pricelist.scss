@@ -13,13 +13,10 @@
         position:absolute;
         top:3.3rem;
         left: 4rem;
-        
-        &::after{
-            content: "";
-            border-bottom: 2px solid green;
-            width: 80px;
-            height: 1px;
-        }
+        width: 26%;
+        border-bottom: 7px solid lightseagreen;
+
+       
     }
     
  
@@ -44,46 +41,50 @@
 }
 
 .card{
-    width: 80%;
-    height: 90%;
-    background-color: white;
+    width: 82%;
+    height: 85%;
+    background-color: white;   
     
     
-    color: black;
     border:1px solid black;
     position: relative;
     text-align: center;
-
+    
     &::before{
         content: "";
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: green;
+        width: 50px;
+        height: 50px;
+        background-color: white;
         border-radius: 50%;
-        transform: translateY(-70%);
-        z-index: 10;
+        transform: translateY(-1.6rem);
+
+        border: 1px solid black;
+  
+       
         
     }
     &::after{
         content: "";
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color:white;
+        width: 29px;
+        height: 29px;
+        
+        background-color:lightseagreen;
         border-radius: 50%;
-        transform: translateY(-180%);
-        z-index: 1;
+        transform: translateY(-6rem);
+  
+        
+        
     
 
     }
 
-    h1{
+    h2{
         margin-top: 2%;
         text-transform: uppercase;
         font-size: 22px;
-        color:white;
+        color:rgb(165, 161, 161);
     }
     
 

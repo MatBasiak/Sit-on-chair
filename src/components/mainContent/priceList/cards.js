@@ -21,7 +21,7 @@ export default class Cards extends Component {
     cardCreate = (item,style,i)=>{
         return(
             <div key={i} className={style.card}>
-                <h1>{item.name}</h1>
+                <h2>{item.name}</h2>
                 <div className={style.priceBox}><h3>{`${item.price}`}</h3><span>.99</span><span>pln/msc</span></div>
                 {this.featureCreator(item,style)}
             </div>
