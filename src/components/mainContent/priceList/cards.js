@@ -4,6 +4,11 @@ export default class Cards extends Component {
     constructor(props){
         super(props)
     }
+
+    featureCreator = (item,style)=>{
+        return
+        
+    }
     cardCreator = (data, style)=>{
         const dataArray = Object.values(data)
         
@@ -18,7 +23,9 @@ export default class Cards extends Component {
             <div key={i} className={style.card}>
                 <h1>{item.name}</h1>
                 <div className={style.priceBox}><h3>{`${item.price}`}</h3><span>.99</span><span>pln/msc</span></div>
+                {this.featureCreator(item,style)}
             </div>
+            
         )}
 
  

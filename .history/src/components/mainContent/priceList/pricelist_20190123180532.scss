@@ -1,7 +1,6 @@
 .container{
     background-color: lightgray;
     height: 77vh;
-    position: relative;
 
     h1{
         color:black;
@@ -10,16 +9,6 @@
         padding:1rem;
         
         padding: 2px;
-        position:absolute;
-        top:3.3rem;
-        left: 4rem;
-        
-        &::after{
-            content: "";
-            border-bottom: 2px solid green;
-            width: 80px;
-            height: 1px;
-        }
     }
     
  
