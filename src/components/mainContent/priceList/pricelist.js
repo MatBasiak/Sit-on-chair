@@ -8,18 +8,21 @@ export default class PriceList extends Component {
             this.state={
                 item1:{
                     name:'Basic Plan',
-                    price:85
-                    // features:['Zakup towaru + dowóz', 'serwis']
+                    price:85,
+                    features:['Zakup towaru + dowóz', 'Serwis'],
+                    buttonText:"dołącz"
                 },
                 item2:{
                     name:'Standard Plan',
-                    price:95
-                    // features:['Zakup towaru + dowóz', 'serwis', 'gwarancja 5 lat']
+                    price:95,
+                    features:['Zakup towaru + dowóz', 'Serwis', 'Gwarancja 5 lat'],
+                    buttonText: "dołącz"
                 },
                 item3:{
                     name:'Advance Plan',
-                    price:211
-                //     features:['Zakup towaru + dowóz', 'serwis', 'gwarancja 6 lat', 'porady projektanta']
+                    price:211,
+                    features:['Zakup towaru + dowóz', 'Serwis', 'Gwarancja 6 lat', 'Porady projektanta'],
+                    buttonText: "dołącz"
                 }
 
 

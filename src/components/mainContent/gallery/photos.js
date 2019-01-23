@@ -7,7 +7,7 @@ class Photos extends Component{
 
      photos = (data,)=>{    
         const dataArray = Object.values(data)
-        console.log(dataArray);
+       
    
        return ( dataArray.map((element,i )=> (
          <div key={i}><div><h2>{element.text}</h2></div><img src={`./${element.src}`}/></div>)

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '../../widgets/button';
 
 export default class Cards extends Component {
     constructor(props){
@@ -6,7 +7,17 @@ export default class Cards extends Component {
     }
 
     featureCreator = (item,style)=>{
-        return
+        const features=item.features
+
+
+        return(
+            
+            features.map((feature, i) => < div key = {i}
+                    className = {`${i%2!=0?style.feature_lightgray:style.feature}`} > { feature} </div>
+            )
+            
+
+        )
         
     }
     cardCreator = (data, style)=>{
@@ -23,7 +34,9 @@ export default class Cards extends Component {
             <div key={i} className={style.card}>
                 <h2>{item.name}</h2>
                 <div className={style.priceBox}><h3>{`${item.price}`}</h3><span>.99</span><span>pln/msc</span></div>
-                {this.featureCreator(item,style)}
+                < div className = {style.feature_container}> {
+                    this.featureCreator(item, style) } </div>
+                     <Button class = {style.button} text = {item.buttonText}/>
             </div>
             
         )}
