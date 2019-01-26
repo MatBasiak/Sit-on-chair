@@ -1,4 +1,7 @@
-.container{
+
+@import "../../../config.scss";
+
+.container {
     background-color:#F1F1F1;
     height: 77vh;
     position: relative;
@@ -14,7 +17,7 @@
         top:3.3rem;
         left: 4rem;
         width: 26%;
-        border-bottom: 7px solid lightseagreen;
+        border-bottom: 7px solid $prime-color;
 
        
     }
@@ -85,7 +88,7 @@
              
         text-transform: uppercase;
         font-size: 22px;
-        color:lightseagreen;
+        color:$prime-color;
     }
     .feature_container{
 
@@ -96,18 +99,18 @@
         text-align: center;
     
         .feature{
-            background-color:#E3E3E3;
-            
+            background-color:#E3E3E3;            
             height:  3rem;
-            padding-top: .4rem;   
+            padding-top: .4rem;          
         
-        &_lightgray {
-            background-color:#F1F1F1;
-            height: 3rem;
-            padding-top: .4rem;  
-            
-        }
     }
+        .feature_lightgray{
+            @extend .feature;
+            background-color: #F1F1F1;
+
+
+    }
+
     }
     
 
@@ -150,7 +153,7 @@
         transform: translateX(-50%);
          width: 7.6rem;
          height: 2.1rem;
-         background-color: lightseagreen;
+         background-color:$prime-color;
          border-radius: 5px;
          color: white;
          text-align: center;
