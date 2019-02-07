@@ -13,7 +13,7 @@ export default class Contact extends Component {
           element: "checkbox",
           value: "",
           label: true,
-          labelText: "zgadzam si ena przetwarzanie danych osobowych",
+          
           config:{
               name: "agree",
               type: "checkbox",
@@ -69,7 +69,7 @@ export default class Contact extends Component {
             <FormFields formData={this.state.formData} class={Style.form}/>
             <Button text={this.state.buttonText} class={Style.button}/>
             <Checkbox data={this.state.checkbox} class={Style.checkbox}/>
-            <span>{this.state.checkbox.labelText}</span>
+            <span> {`Zgadzam się na przetwarzanie danych osobowych`} </span>
             <div className={Style.imageHandler}/>
             </div>
 
