@@ -1,7 +1,86 @@
 @import "../../../config.scss";
+@import "../priceList/pricelist.scss";
 
-.button{
-    width:150px;
-    height: 45px;
-    background-color: $prime-color;
+
+.container {
+    background-color: #ffffff;
+
+    height: 68vh;
+    h1{
+        top:3.3rem;
+    }
+
+    form {
+        position: absolute;
+        top: 18%;
+        left: 6%;
+       
+      
+
+        input{
+            width:38.8rem;
+            height: 4rem;
+            margin-bottom: 2.3vh;
+            font-size: 2rem;
+            font-weight: 70;
+            font-family: Raleway;
+            padding-left: 11px;
+            border:$thin-border;
+
+           
+         
+            
+
+        }
+        textarea{
+            @extend input;
+            height: 11rem;
+            padding-top: .9rem;
+        }
+       
+    }
+    .checkbox{
+        width: 50px;
+        height: 50px;
+         position: absolute;
+         right:24rem;
+         bottom: 17rem;
+         
+         background-color: #fff;
+         border:$thin-border;
+         &:checked{
+             color:red;
+         }
+    }
+    .button{
+        
+        width: 21.5rem;
+        height: 4.5rem;
+        background-color:$prime-color;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 13px;
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        right:6rem;
+        bottom: 10.5rem;
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    .imageHandler{
+         position: absolute;
+         top: 6rem;
+         right: 10rem;
+         background-image: url('../../../../docs/images/red_chair.png');
+         width: 16rem;
+         height: 16rem;
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+
+
 }

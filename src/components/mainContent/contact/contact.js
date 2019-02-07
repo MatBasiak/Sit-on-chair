@@ -2,12 +2,24 @@ import React, { Component } from "react";
 import FormFields from "./forms";
 import Button from "../../widgets/button";
 import Style from "./contact.scss";
+import Checkbox from "../../widgets/checkbox";
 
 export default class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
       buttonText: "wyślij",
+      checkbox: {
+          element: "checkbox",
+          value: "",
+          label: true,
+          labelText: "zgadzam si ena przetwarzanie danych osobowych",
+          config:{
+              name: "agree",
+              type: "checkbox",
+              id: "agree"
+          }
+      },
 
       formData: {
         name: {
@@ -18,7 +30,7 @@ export default class Contact extends Component {
           config: {
             name: "name_input",
             type: "text",
-            placeholder: "Imie"
+            placeholder: "Imię"
           }
         },
         email: {
@@ -41,30 +53,27 @@ export default class Contact extends Component {
             name: "name_input",
             rows: 8,
             cols: 36,
-            placeholder: "wiadomosc"
-          }
-        },
-        checkbox: {
-          element: "checkbox",
-          value: "",
-          label: true,
-          labelText: "zgadzam si ena przetwarzanie danych osobowych",
-          config: {
-            name: "agree",
-            type: "checkbox",
-            id: "agree"
+            placeholder: "Wiadomość"
           }
         }
+        
       }
     };
   }
 
   render() {
     return (
-      <div>
-        <h1> Kontakt </h1> <FormFields formData={this.state.formData} />
-        <Button text={this.state.buttonText} class={Style.button} />
-      </div>
+      <div className={Style.container}>
+       <div>
+            <h1> Kontakt </h1>
+            <FormFields formData={this.state.formData} class={Style.form}/>
+            <Button text={this.state.buttonText} class={Style.button}/>
+            <Checkbox data={this.state.checkbox} class={Style.checkbox}/>
+            <span>{this.state.checkbox.labelText}</span>
+            <div className={Style.imageHandler}/>
+            </div>
+
+     </div>
     );
   }
 }

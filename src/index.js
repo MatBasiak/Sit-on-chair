@@ -19,7 +19,7 @@ class App extends React.Component{
                 <Gallery/>
                 <PriceList/>
                 <Contact/>
-                
+                <div style={{height:"50px", border:"2px solid green"}}>footer</div> 
             </div>
         )
     }

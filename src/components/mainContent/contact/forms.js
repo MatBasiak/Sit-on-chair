@@ -128,6 +128,12 @@ const FormFields = props => {
     }
     return formTemplate;
   };
-  return <div>{renderFields()}</div>;
+  return <div>
+      < form className = {
+          props.class
+      }>
+  {renderFields()}
+  </form>
+  </div>;
 };
 export default FormFields;
