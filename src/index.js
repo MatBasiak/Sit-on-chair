@@ -6,6 +6,7 @@ import News from './components/mainContent/news/news';
 import Gallery from './components/mainContent/gallery/gallery';
 import PriceList from './components/mainContent/priceList/pricelist';
 import Contact from './components/mainContent/contact/contact';
+import Footer from './components/footer/footer'
 
 
 class App extends React.Component{
@@ -19,6 +20,7 @@ class App extends React.Component{
                 <Gallery/>
                 <PriceList/>
                 <Contact/>
+                <Footer/>
                  
             </div>
         )

@@ -77,3 +77,5 @@ export default class Contact extends Component {
     );
   }
 }
+
+const dupa='dupa jeza';
