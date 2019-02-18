@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../widgets/logo/logo"
+import Style from './footer.scss'
 
 class Footer extends Component{
 
@@ -29,12 +30,14 @@ class Footer extends Component{
   
     render(){
         return(
-            <div>
-                <p>footer</p>
-                {this.state.logos.map(logo=>
-                <a href={logo.link}><img src={logo.icon}/></a>    
-        )}
-                <Logo/>
+            <div className={Style.footer_container}>
+                <p className={Style.copyright}>Copyright 2014 | All Right Reserved - Sit On Chair</p>
+                <div className={Style.social}>
+                 {this.state.logos.map(logo=>
+                    <a href={logo.link}><img src={logo.icon}/></a>
+                     )}
+                 </div>
+                <Logo class={Style.logo}/>
             </div>
         )
     }

@@ -5,7 +5,7 @@
 .container {
     background-color: #ffffff;
 
-    height: 68vh;
+    height: 58vh;
     h1{
         top:3.3rem;
     }
@@ -46,7 +46,7 @@
         height: 50px;
          position: absolute;
          right:24rem;
-         bottom: 17rem;
+         bottom: 12rem;
          
          background-color: #fff;
          border:$thin-border;
@@ -68,14 +68,14 @@
         font-weight: bold;
         position: absolute;
         right:6rem;
-        bottom: 10.5rem;
+        bottom: 5.5rem;
         display: inline-block;
         padding-top: 20px;
     }
     span{
         font-size: 1.3rem;
         position: absolute;
-        top: 21.5rem;
+        top: 20.5rem;
         left: 51.5rem;
         // color:rgb(220, 220, 220);
     }
